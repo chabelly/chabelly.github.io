@@ -22,6 +22,9 @@ html {
 h1 {
     font-weight: 300;
 }
+.h2, h2 {
+    font-size: 1.5rem;
+}
 
 h6.footer {
     color: #ed4956;
@@ -546,7 +549,7 @@ li.nav-item {
         font-weight: 300;
     }
     
-        h1.headline{
+    h1.headline{
         text-align: left;
     }
 
@@ -571,10 +574,6 @@ li.nav-item {
 
     p.homecardcopy {
         color: #787878;
-    }
-    
-        a.next{
-        font-size: 24px;
     }
 
     .mobilespace {
@@ -676,10 +675,6 @@ li.nav-item {
         text-align: center;
     }
     
-    a.next{
-        font-size: 24px;
-    }
-
     footer.bg-dark {
         text-align: center;
     }
