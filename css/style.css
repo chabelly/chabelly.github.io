@@ -572,6 +572,10 @@ li.nav-item {
     p.homecardcopy {
         color: #787878;
     }
+    
+        a.next{
+        font-size: 24px;
+    }
 
     .mobilespace {
         padding: 20px;
@@ -670,6 +674,10 @@ li.nav-item {
     a.copyright,
     a.footerhyperlink {
         text-align: center;
+    }
+    
+    a.next{
+        font-size: 24px;
     }
 
     footer.bg-dark {
