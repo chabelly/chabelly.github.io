@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="referrer" content="no-referrer" />
+    <meta charset="utf-8">
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width">
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Showpad Campaign Emil</title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" type='text/css'>
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>          <style>              * {                  font-family: sans-serif !important;              }          </style>      <![endif]-->
+    <!--[if !mso]><!-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" type='text/css'>
+    <!--<![endif]-->
+    <!-- Web Font / @font-face : END -->
+    <!-- CSS Reset : BEGIN -->
+    <style>
+        table,
+        td,
+        div,
+        li,
+        ol,
+        ul,
+        span,
+        a,
+        p {
+            font-family: Montserrat, Geneva, Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        [style*="Montserrat"] {
+            font-family: Montserrat, 'Montserrat', Arial, sans-serif !important;
+        }
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            margin: 0 auto !important;
+        }
+
+        table table table {
+            table-layout: auto;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        *[x-apple-data-detectors],
+        /* iOS */
+        .unstyle-auto-detected-links *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img+div {
+            display: none !important;
+        }
+
+        /* What it does: Prevents underlining the button text in Windows 10 */
+        .button-link {
+            text-decoration: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+
+        td.extraspace {
+            padding: 0px 120px 0px 0px;
+        }
+
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            .email-container {
+                min-width: 320px !important;
+            }
+
+            table.devicewidth {
+                width: 260px !important;
+                text-align: center !important;
+            }
+
+            td.devicewidth {
+                width: 260px !important;
+                text-align: center !important;
+            }
+
+            table.devicewidthinner {
+                width: 240px !important;
+                text-align: center !important;
+            }
+
+            td.devicewidthinner {
+                width: 240px !important;
+                text-align: center !important;
+            }
+        }
+
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            .email-container {
+                min-width: 375px !important;
+            }
+
+            table.devicewidth {
+                width: 260px !important;
+                text-align: center !important;
+            }
+
+            td.devicewidth {
+                width: 260px !important;
+                text-align: center !important;
+            }
+
+            table.devicewidthinner {
+                width: 240px !important;
+                text-align: center !important;
+            }
+
+            td.devicewidthinner {
+                width: 240px !important;
+                text-align: center !important;
+            }
+        }
+
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            .email-container {
+                min-width: 414px !important;
+            }
+        }
+
+    </style>
+    <!-- CSS Reset : END -->
+    <!-- Reset list spacing because Outlook ignores much of our inline CSS. -->
+    <!--[if mso]>      <style type="text/css">          ul,          ol {              margin: 0 !important;          }          li {              margin-left: 30px !important;          }          li.list-item-first {              margin-top: 0 !important;          }          li.list-item-last {              margin-bottom: 10px !important;          }      </style>      <![endif]-->
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+        /* What it does: Hover styles for buttons */
+        .button-td,
+        .button-a {
+            transition: all 100ms ease-in;
+        }
+
+        .button-td-primary:hover,
+        .button-a-primary:hover {
+            background: #555555 !important;
+            border-color: #555555 !important;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 640px) {
+            .mobileview {
+                padding: 0px !important;
+            }
+
+            .mobilespace {
+                padding-top: 20px !important;
+            }
+
+            td.extraspace {
+                padding: 0px 0px 0px 0px;
+            }
+
+            img.footerlogo {
+                padding-bottom: 20px;
+            }
+
+            .email-container {
+                width: 100% !important;
+                margin: auto !important;
+            }
+
+            table.devicewidth {
+                width: 260px !important;
+                text-align: center !important;
+            }
+
+            td.devicewidth {
+                width: 260px !important;
+                text-align: center !important;
+            }
+
+            table.devicewidthinner {
+                width: 240px !important;
+                text-align: center !important;
+            }
+
+            td.devicewidthinner {
+                width: 240px !important;
+                text-align: center !important;
+            }
+
+            /* What it does: Forces elements to resize to the full width of their container. Useful for resizing images beyond their max-width. */
+            .fluid {
+                max-width: 100% !important;
+                height: auto !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
+
+            /* What it does: Forces table cells into full-width rows. */
+            .stack-column,
+            .stack-column-center {
+                display: block !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                direction: ltr !important;
+            }
+
+            /* What it does: adds space under dealer logo during responsive */
+            .headerlogo {
+                padding-bottom: 20px !important;
+            }
+
+            /* And center justify these ones. */
+            .stack-column-center {
+                text-align: center !important;
+            }
+
+            /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                float: none !important;
+            }
+
+            table.center-on-narrow {
+                display: inline-block !important;
+            }
+
+            /* What it does: Adjust typography on small screens to improve readability */
+            .header-text p {
+                font-size: 20px !important;
+            }
+
+            .email-container p {
+                font-size: 17px !important;
+            }
+
+            .mobileconnect {
+                display: block !important;
+            }
+        }
+
+    </style>
+    <!-- Progressive Enhancements : END -->
+    <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+    <!--[if gte mso 9]>      <xml>          <o:OfficeDocumentSettings>              <o:AllowPNG/>              <o:PixelsPerInch>96</o:PixelsPerInch>          </o:OfficeDocumentSettings>      </xml>      <![endif]-->
+</head>
+<!--      The email background color is defined in three places:      1. body tag: for most email clients      2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr      3. mso conditional: For Windows 10 Mail  -->
+
+<body width="100%" style="margin: 0; mso-line-height-rule: exactly; background-color: #d8d8d8;">
+    <style type="text/css">
+        div.preheader {
+            display: none !important;
+        }
+
+    </style>
+    <div class="preheader" style="font-size: 1px; display: none !important;">Explore content pages and create shareable Collections!</div>
+    <center style="width: 100%; background-color: #d8d8d8; text-align: left;">
+        <!--[if mso | IE]>      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #d8d8d8;">      <tr>      <td>      <![endif]-->
+        <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+        <!-- Preview Text Spacing Hack : BEGIN -->
+        <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; ">
+            &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+        </div>
+        <!-- Preview Text Spacing Hack : END -->
+
+        <!-- Email Body Container : BEGIN -->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="650" style="margin: auto;" class="email-container">
+            <!-- HEADER: BEGIN -->
+            <tr>
+                <th align="center" valign="middle" style="padding: 27px 27px 27px 27px;" bgcolor="#ffffff" class="center-on-narrow">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" valign="middle">
+                        <tr>
+                            <th class="" width="50%" valign="middle">
+                                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                                    <tr>
+                                        <td class="stylingblock-content-wrapper camarker-inner">
+                                            <div align="left" style="text-align: left; padding: 0px 0px 0px 0px;">
+                                                <a href="#" target="_blank"><img width="200" style="max-width: 100%;" src="https://image.email.alarm.com/lib/fe9a13707565027c73/m/13/a3bc13aa-f6cb-4a9c-9272-1ba60e796c1f.jpg" border="0" alt="Alarm.com"></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </th>
+                            <th class="" width="50%" valign="middle">
+                                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                                    <tr>
+                                        <td class="stylingblock-content-wrapper camarker-inner">
+                                            <div align="right" style="text-align: right;padding: 10px 0px 15px 0px;">
+                                                <span style="font-size: 12px;color: #555555;font-weight: 500;"><a style="text-decoration: underline;color: rgb(51, 51, 51);" href="h#" target="_blank">View in Browser</a></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+            <!-- HEADER : END -->
+            <!-- Divider: BEGIN -->
+            <tr>
+                <th align="left" width="100%" style="background-color:#F25E0F; padding:5px 0px 0px 0px;">
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" align="left">
+                        <tr>
+                            <th align="left" width="100%" height="1" style="background-color:#F25E0F; line-height:1px;">
+                            </th>
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+            <!-- Divider: END -->
+            <!-- 2 Column: BEGIN -->
+            <tr>
+                <th align="center" bgcolor="#ffffff" style="padding:0px 0px 0px 0px;" valign="middle">
+                    <table border="0" cellpadding="0" cellspacing="0" dir="ltr" role="presentation" width="100%">
+                        <tr>
+                            <!-- Left Column -->
+                            <th class="stack-column-center" style="" valign="middle" width="50%">
+                                <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%;" width="100%">
+                                    <tr>
+                                        <td align="center" width="100%" style="padding:27px 0px 27px 0px;">
+                                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                                                <tr>
+                                                    <td class="stylingblock-content-wrapper camarker-inner">
+                                                        <!-- row -->
+                                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                            <tr>
+                                                                <td width="100%" valign="middle" style="padding: 0px 0px 0px 27px;" align="left">
+                                                                    <div align="left">
+                                                                        <span style="color: #1d252d; font-size: 23px; font-weight:500; font-family: Montserrat, 'Montserrat', Geneva, Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: left;">Go further with your new <strong style="color: #F25E0F;">Showpad account</strong></span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <!-- /row -->
+                                                        <!-- row -->
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                            <tr>
+                                                                <td style="text-align:left; padding: 10px 10px 0px 27px;" width="100%" align="center">
+                                                                    <span style="font-size:15px; line-height:22px; font-weight:normal; font-family: Montserrat, 'Montserrat', Geneva, Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#1d252d; text-align: left;"><i>Create shareable Collections!
+                                                                        </i></span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <!-- /row -->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </th>
+                            <!-- /Left Column -->
+                            <!-- Right Column -->
+                            <th class="stack-column-center" style="" valign="middle" width="50%">
+                                <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%;" width="100%">
+                                    <tr>
+                                        <td class="mobileview" align="center" width="100%" style="padding:0px 0px 0px 0px;">
+                                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                                                <tr>
+                                                    <td class="stylingblock-content-wrapper camarker-inner">
+                                                        <!-- row -->
+                                                        <div align="center">
+                                                            <a href="#" target="_blank"><img src="https://image.email.alarm.com/lib/fe9a13707565027c73/m/21/b43d64ee-156b-4559-abcb-e1f9425e76c6.jpg" border="0" width="100%" style="display:block; max-width:100%; text-align:center;" alt="Explore content pages and create shareable Collections Image"></a>
+                                                        </div>
+                                                        <!-- /row -->
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </th>
+                            <!-- /Right Column -->
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+            <!-- 2 Column: END -->
+            <!-- 1 Column: BEGIN -->
+            <tr>
+                <td align="center" valign="top" style="padding: 27px 27px 27px 27px;background-color: #F2F2F2;">
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                        <tr>
+                            <td class="stylingblock-content-wrapper camarker-inner"><span style="font-size:14px; line-height:20px; font-weight:normal; font-family: Montserrat, 'Montserrat', Geneva, Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#1d252d; text-align: left;"><strong>Here are a few tips for making the most out of your new Showpad account!</strong> To learn more about Showpad today, visit the <a href="#" target="_blank" style="color:#F25E0F;"><strong>Showpad overview page.</strong></a></span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 1 Column: END -->
+            <!-- 1 Column: BEGIN -->
+            <tr>
+                <td align="center" valign="top" style="padding: 27px 27px 27px 27px; background-color: #ffffff;">
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                        <tr>
+                            <td class="stylingblock-content-wrapper camarker-inner">
+                                <!-- row -->
+                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                    <tr>
+                                        <td width="100%" valign="top" style="padding: 0px 0px 0px 0px;" align="left">
+                                            <div align="left">
+                                                <span style="color: #F25E0F; font-size: 20px; font-weight:600; line-height: normal; font-family: Montserrat, 'Montserrat', Geneva, Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: left;"><strong>Create shareable Collections</strong></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- /row -->
+                                <!-- row -->
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tr>
+                                        <td style="text-align:left; padding: 8px 0px 0px 0px;" width="100%" align="center">
+                                            <span style="font-size:14px; line-height:20px; font-weight:normal; font-family: Montserrat, 'Montserrat', Geneva, Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#1d252d; text-align: left;">A Collection is a personalized folder of resources you create by mixing our library of &zwj;Alarm.&zwj;com&zwj; collateral with your own uploaded sales assets. <a href="#" target="_blank" style="color:#F25E0F;"><strong>Learn more about Collections,</strong></a> like how to: </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- /row -->
+                                <!-- row -->
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tr>
+                                        <td style="text-align:left; padding: 0px 0px 0px 0px;" width="100%" align="center">
+                                            <span style="font-size:14px; line-height:20px; font-weight:normal; font-family: Montserrat, 'Montserrat', Geneva, Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#1d252d; text-align: left;">
+                                                <ol style="line-height:25px;">
+                                                    <li>Keep all your content in one place</li>
+                                                    <li>Make it easy to lead successful sales conversations</li>
+                                                    <li>Create as many Collections as you want to prepare for every possible scenario</li>
+                                                </ol>
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- /row -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 1 Column: END -->
+            <!-- 2 Column: BEGIN -->
+            <tr>
+                <th align="center" bgcolor="#53081A" style="padding:27px 27px 27px 27px;" valign="bottom">
+                    <table border="0" cellpadding="0" cellspacing="0" dir="ltr" role="presentation" width="100%">
+                        <tr>
+                            <!-- Left Column -->
+                            <th class="stack-column-center" style="" valign="top" width="30%">
+                                <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%;" width="100%">
+                                    <tr>
+                                        <td align="center" width="100%" style="">
+                                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                                                <tr>
+                                                    <td class="stylingblock-content-wrapper camarker-inner">
+                                                        <!-- row -->
+                                                        <div align="center">
+                                                            <a href="#" target="_blank"><img src="https://image.email.alarm.com/lib/fe9a13707565027c73/m/21/2fedda2a-0b90-458f-86c2-cf6f75f243a4.png" border="0" width="100%" style="display:block; max-width:100%; text-align:center;" alt="Features collateral for the latest products image"></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </th>
+                            <!-- /Left Column -->
+                            <!-- Right Column -->
+                            <th class="stack-column-center" style="" valign="top" width="70%">
+                                <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%;" width="100%">
+                                    <tr>
+                                        <td class="mobileview" align="center" width="100%" style="padding:0px 0px 0px 20px;">
+                                            <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                                                <tr>
+                                                    <td class="stylingblock-content-wrapper camarker-inner">
+                                                        <!-- row -->
+                                                        <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                            <tr>
+                                                                <td width="100%" valign="top" style="padding: 0px 0px 0px 0px;" align="left">
+                                                                    <div align="left">
+                                                                        <span style="color: #F25E0F; font-size: 20px; font-weight:600; line-height: normal; font-family: Montserrat, 'Montserrat', Geneva, Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: left;"><strong>Explore content pages</strong></span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <!-- /row -->
+                                                        <!-- row -->
+                                                        <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                                            <tr>
+                                                                <td style="text-align:left; padding: 8px 0px 0px 0px;" width="100%" align="center">
+                                                                    <span style="font-size:14px; line-height:20px; font-weight:normal; font-family: Montserrat, 'Montserrat', Geneva, Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#ffffff; text-align: left;">Use our interactive maps to walk your customers through each room of a demo property, share recommendations for product pairings, and reference use cases for home and business.</span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <!-- /row -->
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                            </th>
+                            <!-- /Right Column -->
+                        </tr>
+                    </table>
+                </th>
+            </tr>
+            <!-- 2 Column: END -->
+            <!-- 1 Column: BEGIN -->
+            <tr>
+                <td align="center" valign="top" style="padding: 27px 27px 27px 27px; background-color: #ffffff;">
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                        <tr>
+                            <td class="stylingblock-content-wrapper camarker-inner">
+                                <!-- row -->
+                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                    <tr>
+                                        <td width="100%" valign="top" style="padding: 0px 0px 0px 0px;" align="left">
+                                            <div align="left">
+                                                <span style="color: #F25E0F; font-size: 20px; font-weight:600; line-height: normal; font-family: Montserrat, 'Montserrat', Geneva, Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif; text-align: left;"><strong>What’s next?</strong></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- /row -->
+                                <!-- row -->
+                                <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                                    <tr>
+                                        <td style="text-align:left; padding: 8px 0px 0px 0px;" width="100%" align="center">
+                                            <span style="font-size:14px; line-height:20px; font-weight:normal; font-family: Montserrat, 'Montserrat', Geneva, Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#1d252d; text-align: left;"><strong>Build a Collection, explore content pages, and look out for the final email in this three-part series!</strong> To learn more about closing sales with Showpad, visit the <a href="#" target="_blank" style="color:#F25E0F;"><strong>&zwj;Alarm.&zwj;com&zwj; Showpad overview page</strong></a> or complete the on-demand training through the <a href="#" target="_blank" style="color:#F25E0F;"><strong style="color:#F25E0F;">Academy Online.</strong></a></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- /row -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 1 Column: END -->
+            <!-- 1 Column: BEGIN -->
+            <tr>
+                <td align="center" valign="top" style="padding: 0px 27px 27px 27px; background-color: #ffffff;">
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                        <tr>
+                            <td class="stylingblock-content-wrapper camarker-inner">
+                                <!-- HR -->
+                                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                    <tr>
+                                        <th align="center" style="padding: 0px 0px 0px 0px;" width="100%">
+                                            <table cellspacing="0" cellpadding="0" border="0" width="100%" style="width: 100% !important;">
+                                                <tr>
+                                                    <th align="left" valign="top" width="100%" height="1" style="background-color: #d0d0d0; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly;">
+                                                    </th>
+                                                </tr>
+                                            </table>
+                                        </th>
+                                    </tr>
+                                </table>
+                                <!-- /HR -->
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 1 Column: END -->
+            <!-- 1 Column: BEGIN -->
+            <tr>
+                <td align="center" valign="top" style="padding: 0px 27px 27px 27px; background-color: #ffffff;">
+                    <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                        <tr>
+                            <td class="stylingblock-content-wrapper camarker-inner"><span style="font-size:14px; line-height:20px; font-weight:normal; font-family: Montserrat, 'Montserrat', Geneva, Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif; color:#1d252d; text-align: left;">Reach out to <a href="#" style="color:#F25E0F;"><strong style="color:#F25E0F;">partnermarketing@alarm.com</strong></a> with any questions or feedback about Showpad.</span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 1 Column: END -->
+        </table>
+        <!-- Email Body Container : END -->
+        <!--[if mso | IE]>      </td>      </tr>      </table>      <![endif]-->
+    </center>
+    <!-- footer: BEGIN -->
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="650" style="margin: auto;" class="email-container">
+        <!-- RIGHT-IMG row -->
+        <tr>
+            <th align="center" bgcolor="#d8d8d8" style="padding:27px 27px 27px 27px;" valign="bottom">
+                <table border="0" cellpadding="0" cellspacing="0" dir="rtl" role="presentation" width="100%">
+                    <tr>
+                        <!-- Left Column -->
+                        <th class="stack-column-center" style="" valign="middle" width="50%">
+                            <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%;" width="100%">
+                                <tr>
+                                    <td align="center" width="100%" dir="ltr" style="">
+                                        <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                                            <tr>
+                                                <td class="stylingblock-content-wrapper camarker-inner">
+                                                    <!-- row -->
+                                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="">
+                                                        <tr>
+                                                            <td dir="ltr" valign="middle" align="right" width="100%" style="padding-left:0px; text-align:right;" class="stack-column-center">
+                                                                <a href="#" target="_blank"><img border="0" class="footerlogo" src="https://image.email.alarm.com/lib/fe9a13707565027c73/m/13/26395812-7343-4e59-a272-8935b058caa6.jpg" style="max-width: 100%;" width="230" alt="Powered by Alarm.com"></a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <!-- /row -->
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </th>
+                        <!-- /Left Column -->
+                        <!-- Right Column -->
+                        <th class="stack-column-center" style="" valign="middle" width="50%">
+                            <table cellpadding="0" cellspacing="0" class="stylingblock-content-wrapper" style="min-width: 100%;" width="100%">
+                                <tr>
+                                    <td align="top" width="100%" dir="ltr" style="padding:0px 0px 0px 0px;">
+                                        <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                                            <tr>
+                                                <td class="stylingblock-content-wrapper camarker-inner">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td dir="ltr" align="left" style="padding: 0px 0px 0px 0px; text-align:left;" width="100%">
+                                                                <table border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                                                    <tr>
+                                                                        <td style="padding: 0px 8px 0px 0px;" valign="top">
+                                                                            <a href="#" target="_blank"><img border="0" src="https://image.email.alarm.com/lib/fe9a13707565027c73/m/21/6284957f-d210-4166-b7f1-05e7ba72ba47.png" style="max-width:100%;" width="27" alt="facebook"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0px 8px 0px 0px;" valign="top">
+                                                                            <a href="#" target="_blank"><img border="0" src="https://image.email.alarm.com/lib/fe9a13707565027c73/m/21/1c150898-1f79-4fbc-bebd-86cd41449ca3.png" style="max-width:100%;" width="27" alt="twitter"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0px 8px 0px 0px;" valign="top">
+                                                                            <a href="#" target="_blank"><img border="0" src="https://image.email.alarm.com/lib/fe9a13707565027c73/m/21/b0ef16eb-cf12-4d0b-9daa-753ce6692886.png" style="max-width:100%;" width="27" alt="youtube"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0px 8px 0px 0px;" valign="top">
+                                                                            <a href="#" target="_blank"><img border="0" src="https://image.email.alarm.com/lib/fe9a13707565027c73/m/21/e801e816-911b-4cd4-94d3-b7cef9b90d0d.png" style="max-width:100%;" width="27" alt="instagram"></a>
+                                                                        </td>
+                                                                        <td style="padding: 0px 8px 0px 0px;" valign="top">
+                                                                            <a href="#" target="_blank"><img border="0" src="https://image.email.alarm.com/lib/fe9a13707565027c73/m/21/22c095c7-19ba-4d60-8f5b-1a75a0b33b3e.png" style="max-width:100%;" width="27" alt="linkedin"></a>
+                                                                        </td>
+                                                                        <td class="extraspace" valign="top"></td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </th>
+                        <!-- /Right Column -->
+                    </tr>
+                </table>
+            </th>
+        </tr>
+        <!-- /RIGHT-IMG row -->
+    </table>
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="590" style="margin: auto;" class="email-container">
+        <tr>
+            <td class="stylingblock-content-wrapper camarker-inner">
+                <!-- Content Here 1 -->
+                <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="min-width: 100%; " class="stylingblock-content-wrapper">
+                    <tr>
+                        <td class="stylingblock-content-wrapper camarker-inner">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="center" style="padding: 0px 0px 20px 0px;" width="100%">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                                <td align="left" height="1" style="background-color: #d0d0d0; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;" valign="top" width="590">
+                                                    <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="">
+                                <tr>
+                                    <td dir="ltr" valign="middle" align="center" width="100%" style="text-align:center;" class="stack-column-center">
+                                        <span style="Margin: 0; color: #646C7D; font-size: 10px; font-weight:normal; font-family: verdana; text-align: center;  line-height:19px; ">This email was sent by: <b>&zwj;Alarm.&zwj;com&zwj;
+                                            </b><br> &zwj;8281 Greensboro&zwj; Drive,&zwj; Suite 100&zwj; &ndash; Tysons&zwj;, VA&zwj; 22102&zwj;<br>
+                                            <a href="#" style="color: #646C7D;"><strong>View our Privacy Policy</strong></a> | <a href="#" style="color: #646C7D;" target="_blank" title="Manage your subscription"><strong>Manage Your Subscriptions</strong></a> </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <!-- /Content Here 1 -->
+            </td>
+        </tr>
+    </table>
+    <!-- footer : END -->
+</body>
+
+</html>
