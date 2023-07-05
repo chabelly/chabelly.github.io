@@ -113,6 +113,8 @@ button#dropdownmenu.btn.btn-default.dropdown-toggle:hover,
 button#dropdownmenu.btn.btn-default.dropdown-toggle:active,
 button#dropdownmenu.btn.btn-default.dropdown-toggle:focus {
     color: #ed4956;
+    color: rgb(237 73 86);
+    
 }
 
 
@@ -139,8 +141,9 @@ li.nav-item-dropwdown {
     color: rgb(255 255 255);
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-light, .navbar-nav, .nav-link:hover, .nav-link:active {
     color: #ed4956;
+    color: rgb(237 73 86);
 }
 
 .navbar-light .navbar-brand {
@@ -181,6 +184,7 @@ a {
 a:hover {
     text-decoration: none;
     color: #ed4956;
+    color: rgb(237 73 86);
 }
 
 a.link:hover {
