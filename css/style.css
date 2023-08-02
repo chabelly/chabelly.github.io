@@ -39,7 +39,7 @@ a.footerhyperlink {
     position: relative;
 }
 
-.anchor #projects {
+.anchor #projects, .anchor #singleprocess {
     position: absolute;
     left: 0;
     top: -140px;
