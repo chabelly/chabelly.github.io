@@ -432,7 +432,7 @@ li.nav-item {
     h1.opener {
         font-size: 3.7rem;
         line-height: 4.8rem;
-        color: #A6A6A6;
+        color: #fff;
     }
 
     h3.homecardcompany,
@@ -508,7 +508,7 @@ li.nav-item {
 @media (min-width: 992px) and (max-width: 1199px) {
     h1.opener {
         font-size: 3.5rem;
-        color: #A6A6A6;
+        color: #fff;
         line-height: 4rem;
     }
 
@@ -586,7 +586,7 @@ li.nav-item {
 @media (min-width: 768px) and (max-width: 991px) {
     h1.opener {
         font-size: 3.2rem;
-        color: #A6A6A6;
+        color: #fff;
         line-height: 3.7rem;
     }
 
@@ -713,7 +713,7 @@ li.nav-item {
 
     h1.opener {
         font-size: 3rem;
-        color: #A6A6A6;
+        color: #fff;
         line-height: 3.5rem;
     }
 
@@ -848,7 +848,7 @@ li.nav-item {
 
     h1.opener {
         font-size: 2.7rem;
-        color: #A6A6A6;
+        color: #fff;
         line-height: 3.2rem;
     }
 
