@@ -798,7 +798,7 @@ li.nav-item {
 
     a.btn.btn-primary-pink,
     a.btn.btn-secondary-white {
-        width: 90%;
+        /*width: 90%;*/
         margin: 10px;
     }
 
@@ -938,7 +938,7 @@ li.nav-item {
 
     a.btn.btn-primary-pink,
     a.btn.btn-secondary-white {
-        width: 90%;
+        /*width: 90%;*/
         margin: 10px;
     }
 }
