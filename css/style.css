@@ -491,7 +491,7 @@ li.nav-item {
 
 
 .marquee-horizontal {
-    position: relative;
+    position: static;
     z-index: 200;
     display: -webkit-box;
     display: -webkit-flex;
