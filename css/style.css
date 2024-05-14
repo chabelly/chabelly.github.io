@@ -491,7 +491,7 @@ li.nav-item {
 
 
 .marquee-horizontal {
-    position: static;
+position: relative;
     z-index: 200;
     display: -webkit-box;
     display: -webkit-flex;
@@ -512,12 +512,10 @@ li.nav-item {
 }
 
 .track-horizontal {
-    position: absolute;
+   position: absolute;
     white-space: nowrap;
     will-change: transform;
     animation: marquee-horizontal 10s linear infinite;
-    /* manipulate the speed of the marquee by changing "40s" line above*/
-
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
