@@ -512,7 +512,7 @@ position: relative;
 }
 
 .track-horizontal {
-   position: absolute;
+   position: static;
     white-space: nowrap;
     will-change: transform;
     animation: marquee-horizontal 10s linear infinite;
