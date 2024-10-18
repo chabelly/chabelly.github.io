@@ -693,6 +693,10 @@ position: relative;
         padding: 40px;
     }
 
+        .space{
+        padding: 80px;
+    }
+
     .spacehometop {
         padding: 30px;
     }
@@ -765,6 +769,10 @@ position: relative;
 
     .bigbreakspace {
         padding: 40px;
+    }
+
+        .space{
+        padding: 80px;
     }
 
     .spacehometop {
