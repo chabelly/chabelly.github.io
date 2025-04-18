@@ -258,8 +258,8 @@ a.btn.btn-primary-outline {
     background-color: #fff;
     font-weight: 500;
     color: #151515;
-    padding: 10px 50px;
-    border-radius: 30px;
+    padding: 15px 20px;
+    border-radius: 8px;
     border: 1px solid #fff;
 }
 
@@ -268,16 +268,16 @@ a.btn.btn-primary-green {
     background-color: #7AFF87;
     font-weight: 500;
     color: #0F1825;
-    padding: 10px 50px;
-    border-radius: 30px;
+    padding: 15px 20px;
+    border-radius: 8px;
 }
 
 a.btn.btn-primary-green:hover {
     background-color: #58EA67;
     font-weight: 500;
     color: #0F1825;
-    padding: 10px 50px;
-    border-radius: 30px;
+    padding: 15px 20px;
+    border-radius: 8px;
 }
 
 a.btn.btn-secondary-white {
@@ -285,8 +285,8 @@ a.btn.btn-secondary-white {
     font-weight: 500;
     border: 1px solid #fff;
     color: #fff;
-    padding: 10px 40px;
-    border-radius: 30px;
+    padding: 15px 20px;
+    border-radius: 8px;
 }
 
 a.btn.btn-secondary-white:hover {
@@ -294,8 +294,8 @@ a.btn.btn-secondary-white:hover {
     font-weight: 500;
     border: 1px solid #0F1825;
     color: #0F1825;
-    padding: 10px 40px;
-    border-radius: 30px;
+    padding: 15px 20px;
+    border-radius: 8px;
 }
 
 /* Button */
