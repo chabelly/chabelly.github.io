@@ -109,6 +109,11 @@
         display: none;
     }
 
+    .header .logo img{
+        max-height: 36px;
+    margin-right: 0px;
+}
+
     /*section.body {
         padding-top: 3rem;
         padding-bottom: 3rem;
