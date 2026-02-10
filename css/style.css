@@ -452,6 +452,11 @@
        margin-bottom: 0rem !important;
     }
 
+    .header .logo img {
+    max-height: 27px;
+    margin-right: 0px;
+}
+
     section.bigwins{
 padding: 3rem 0rem 3rem 0rem;
     }
