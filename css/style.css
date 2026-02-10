@@ -606,6 +606,7 @@ span.label.label-default {
     font-size: 18px;
     line-height: 13px;
     font-weight: 600;
+    display: ruby-text;
 }
 
 header.breadcrumb {
