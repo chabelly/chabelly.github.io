@@ -829,7 +829,7 @@ h6 {
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 10px;
-        padding: 15px 15px 15px 15px;
+        padding: 10px 10px 10px 10px;
     }
 
     .header .logo {
@@ -968,6 +968,13 @@ h6 {
         margin-right: 10px;
         cursor: pointer;
         transition: color 0.3s;
+    }
+
+        .header .header-container {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+        padding: 10px 10px 10px 10px;
     }
 
     .navmenu {
