@@ -447,6 +447,11 @@
 
 /* MOBILE */
 @media (max-width: 575px) {
+
+    .mb-5{
+       margin-bottom: 0rem !important;
+    }
+    
     h1.mainheadline {
         font-size: 75px;
         letter-spacing: -6px;
