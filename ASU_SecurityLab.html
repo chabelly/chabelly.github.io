@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chabelly Cespedes | Creative developer focused on AI systems, automation, and modern web apps</title>
+    <link rel="icon" type="image/png" href="assets/Favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Noto+Sans+Display:wght@400;500;600&family=Noto+Sans:wght@400;500&family=Public+Sans:wght@400;500&display=swap"
+        rel="stylesheet" />
+
+    <!-- Hotjar Tracking Code for https://chabelly.github.io/ -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                (h.hj.q = h.hj.q || []).push(arguments)
+            };
+            h._hjSettings = {
+                hjid: 3531110,
+                hjsv: 6
+            };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZHY6D09S0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NZHY6D09S0');
+
+    </script>
+    <!-- Google tag (gtag.js) -->
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #fff;
+            color: #15191d;
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        /* Disable links */
+        .project-card.disabled {
+            pointer-events: none;
+            /* prevents clicks */
+            opacity: 0.7;
+            /* visually disabled */
+            cursor: not-allowed;
+        }
+
+        /* ── NAV ── */
+        .site-nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: #fff;
+            border-bottom: 1px solid #E2E2E2;
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 60px;
+            gap: 12px;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .cc-icon {
+            width: 34px;
+            height: 34px;
+            background: #15191d;
+            border-radius: 6.7px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 3px;
+            padding: 7px;
+            flex-shrink: 0;
+        }
+
+        .cc-icon span {
+            background: #fff;
+            border-radius: 1px;
+            display: block;
+        }
+
+        .nav-name {
+            font-family: 'Noto Sans Display', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            color: #15191d;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+        }
+
+        .nav-title {
+            font-family: 'Instrument Serif', serif;
+            font-style: italic;
+            font-size: 15px;
+            color: #15191d;
+            letter-spacing: -0.01em;
+            line-height: 1.3;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            color: #15191d;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.7;
+        }
+
+        .btn-contact {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            color: #fff !important;
+            background: #15191d;
+            border-radius: 100px;
+            padding: 11px 26px;
+            text-decoration: none;
+        }
+
+        .btn-contact:hover {
+            opacity: 0.85;
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 24px 24px 32px;
+            border-top: 1px solid #E2E2E2;
+            background: #fff;
+        }
+
+        .mobile-menu.open {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            font-family: 'Noto Sans', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            color: #15191d;
+            text-decoration: none;
+        }
+
+        .mobile-menu .btn-contact {
+            font-size: 15px;
+            padding: 12px 36px;
+            margin-top: 4px;
+        }
+
+        /* ── HERO ── */
+        .hero {
+            text-align: center;
+            padding: 64px 24px 48px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            font-family: 'Noto Sans Display', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            color: #15191d;
+            background: #f3f3f3;
+            border-radius: 100px;
+            padding: 8px 20px;
+            margin-bottom: 24px;
+        }
+
+        .hero-italic {
+            font-family: 'Instrument Serif', serif;
+            font-style: italic;
+            font-size: clamp(2.9rem, 7vw, 5.5rem);
+            color: #000;
+            letter-spacing: -0.02em;
+            line-height: 1.05;
+        }
+
+        .hero-sans {
+            font-family: 'Noto Sans Display', sans-serif;
+            font-weight: 400;
+            font-size: clamp(2.8rem, 7vw, 5.5rem);
+            color: #000;
+            letter-spacing: -0.037em;
+            line-height: 1.05;
+        }
+
+        /* ── PROJECTS ── */
+        #projects {
+            padding: 32px 0;
+        }
+
+        .projects-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            padding: 0 40px;
+        }
+
+        .project-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            width: 496px;
+            height: 701px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 2rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .card-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: scale(1);
+            transition: transform 0.5s ease;
+            z-index: 0;
+        }
+
+        .project-card:hover .card-bg {
+            transform: scale(1.07);
+        }
+
+        .card-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: 1;
+        }
+
+        .card-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-title {
+            font-family: 'Noto Sans Display', sans-serif;
+            font-weight: 600;
+            font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+            color: #fff;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .card-tags {
+            font-family: 'Noto Sans Display', sans-serif;
+            font-weight: 400;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+
+        .card-btn {
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn-explore {
+            display: inline-block;
+            background: #fff;
+            color: #15191d;
+            border-radius: 100px;
+            padding: 10px 24px;
+            font-family: 'Noto Sans Display', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        /* ── CTA ── */
+        .cta-section {
+            padding-top: 80px;
+        }
+
+        .cta-text-row {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 24px;
+            padding: 0 60px 20px;
+        }
+
+        .cta-italic {
+            font-family: 'Instrument Serif', serif;
+            font-style: italic;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            color: #000;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .cta-sans {
+            font-family: 'Noto Sans Display', sans-serif;
+            font-weight: 400;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            color: #000;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+
+        .btn-get-in-touch {
+            display: inline-block;
+            background: #15191d;
+            color: #fff;
+            border-radius: 100px;
+            padding: 14px 32px;
+            font-family: 'Noto Sans Display', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            text-decoration: none;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .btn-get-in-touch:hover {
+            opacity: 0.85;
+            color: #fff;
+        }
+
+        .color-strips {
+            display: flex;
+            height: clamp(180px, 25vw, 416px);
+            overflow: hidden;
+        }
+
+        .strip-orange {
+            background: #ee5423;
+            flex: 0.7;
+        }
+
+        .strip-pink {
+            background: #fabdf2;
+            flex: 1.1;
+        }
+
+        .strip-lime {
+            background: #d1e154;
+            flex: 2;
+        }
+
+        .strip-blush {
+            background: #f3cccc;
+            flex: 1.1;
+        }
+
+        .strip-lavender {
+            background: #cbc6e2;
+            flex: 0.7;
+        }
+
+        /* ── MARQUEE ── */
+        .marquee-section {
+            border-top: 1px solid #fff;
+            padding: 40px 0;
+            background: #fff;
+            overflow: hidden;
+        }
+
+        @keyframes marqueeScroll {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        .marquee-track {
+            display: flex;
+            gap: 16px;
+            width: max-content;
+            animation: marqueeScroll 32s linear infinite;
+        }
+
+        .marquee-img {
+            width: 360px;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+            display: block;
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: #fff;
+            border-top: 1px solid #E2E2E2;
+        }
+
+        .footer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 56px 60px 40px;
+        }
+
+        .footer-logo {
+            flex: 1 1 220px;
+        }
+
+        .footer-logo-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .footer-col {
+            flex: 1 1 140px;
+        }
+
+        .footer-col-title {
+            font-family: 'Public Sans', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            color: #15191d;
+            margin-bottom: 14px;
+        }
+
+        .footer-col a {
+            display: block;
+            font-family: 'Public Sans', sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            color: #575757;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+
+        .footer-col a:hover {
+            color: #15191d;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 16px 60px 24px;
+            border-top: 1px solid #E2E2E2;
+        }
+
+        .footer-copy {
+            font-family: 'Public Sans', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #575757;
+        }
+
+        .footer-back {
+            font-family: 'Public Sans', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            color: #15191d;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 767px) {
+            .nav-inner {
+                padding: 14px 24px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .projects-row {
+                padding: 0 16px;
+                gap: 12px;
+            }
+
+            .project-card {
+                width: 100%;
+                max-width: 496px;
+                height: 450px;
+            }
+
+            .cta-text-row {
+                padding: 0 24px 40px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-inner {
+                padding: 40px 24px 24px;
+            }
+
+            .footer-bottom {
+                padding: 16px 24px 24px;
+            }
+
+            .marquee-img {
+                width: 260px;
+                height: 174px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1099px) {
+            .nav-inner {
+                padding: 14px 32px;
+            }
+
+            .projects-row {
+                padding: 0 24px;
+            }
+
+            .project-card {
+                width: calc(50% - 8px);
+                max-width: 496px;
+            }
+
+            .cta-text-row {
+                padding: 0 32px 48px;
+            }
+
+            .footer-inner {
+                padding: 48px 32px 32px;
+            }
+
+            .footer-bottom {
+                padding: 16px 32px 24px;
+            }
+        }
+    </style>
+	</head>
+    <body>
+    <!-- NAV -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/img/cc_icon_logo.png" style="width: 35px;" alt="Chabelly Cespedes Logo">
+                <div>
+                    <div class="nav-name">Chabelly Céspedes</div>
+                    <div class="nav-title">Designer &amp; Developer</div>
+                </div>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#projects">Projects</a>
+                <a href="https://chabelly.github.io/assets/hi_is_chabelly_cespedes_resume.pdf" target="_blank">Resume
+                    (PDF)</a>
+                <a href="mailto:chabellycespedes@gmail.com?subject=Contact Chabelly Cespedes For Freelance Work!"
+                    class="btn-contact">Contact</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <svg id="icon-open" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <line x1="3" y1="6" x2="21" y2="6" stroke="#15191d" stroke-width="2" stroke-linecap="round" />
+                    <line x1="3" y1="12" x2="21" y2="12" stroke="#15191d" stroke-width="2" stroke-linecap="round" />
+                    <line x1="3" y1="18" x2="21" y2="18" stroke="#15191d" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <svg id="icon-close" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none">
+                    <line x1="5" y1="5" x2="19" y2="19" stroke="#15191d" stroke-width="2" stroke-linecap="round" />
+                    <line x1="19" y1="5" x2="5" y2="19" stroke="#15191d" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html" onclick="closeMenu()">Home</a>
+            <a href="index.html#projects" onclick="closeMenu()">Projects</a>
+            <a href="https://chabelly.github.io/assets/hi_is_chabelly_cespedes_resume.pdf" target="_blank"
+                onclick="closeMenu()">Resume (PDF)</a>
+            <a href="mailto:chabellycespedes@gmail.com?subject=Contact Chabelly Cespedes For Freelance Work!"
+                onclick="closeMenu()" class="btn-contact">Contact</a>
+        </div>
+    </nav>
+
+<br>
+    <!-- Breadcrumb -->
+<div class="container-xl px-4 py-3">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb mb-0 text-uppercase" style="font-size: 14px; letter-spacing: 0px; font-weight: 500;">
+      <li class="breadcrumb-item"><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
+      <li class="breadcrumb-item active text-dark text-decoration-underline" aria-current="page">B36</li>
+    </ol>
+  </nav>
+</div>
+<!-- /Breadcrumb -->	
+<!-- Headline -->
+<div class="container-xl px-4 py-4">
+  <h1 style="font-family: &quot;Noto Sans&quot;, sans-serif; font-weight: 500; font-size: clamp(32px, 5vw, 60px); letter-spacing: -2px; line-height: 1;">Building36</h1>
+  <p class="text-uppercase fw-medium mb-0" style="font-size: 17px; letter-spacing: 0px;">Web Design • Branding • Development • 2024</p>
+  <p class="mt-3 mb-3" style="font-size: clamp(18px, 2vw, 24px); color: rgb(116, 116, 116); line-height: 1.3;">Owned the website rebrand from concept to execution, developing a new visual direction that aligned the brand with its evolving product strategy. Redesigned the user experience, refined the messaging hierarchy, and created a cohesive digital identity that made the platform easier to understand while elevating the overall brand presence.</p>
+  <br><a href="https://building36.com/" target="_blank" class="btn-contact">See it Live</a><br><br>
+</div>
+	<!-- Headline -->
+<!-- Hero --
+<section class="py-5" style="background: rgb(21, 25, 29);">
+  <div class="container-xl px-4">
+	  <img src="assets/projects/b36/b36-hero.png" alt="Building36 website on screen" class="w-100 rounded-4" style="object-fit: cover;">
+	</div>
+</section>
+<!-- Hero -->	
+ 		<!--- Video Hero -->
+<section class="py-5" style="background: rgb(21, 25, 29);">
+  <div class="container-xl px-4">
+    <video
+      class="w-100 rounded-4"
+      autoplay
+      muted
+      loop
+      playsinline
+      style="object-fit: cover;">
+      <source src="assets/Building36-web-video.mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+<!--- Video Hero -->
+<!-- 2 Col Images: White Backg -->
+	<section class="py-5 bg-white">
+  <div class="container-xl px-4">
+    <div class="row g-4">
+      <div class="col-12 col-md-6"><img src="assets/projects/b36/b36-computer.png" alt="Security dashboard" class="w-100 rounded-3" style="object-fit: cover;"></div>
+      <div class="col-12 col-md-6"><img src="assets/projects/b36/b36-pages.png" alt="Security interface" class="w-100 rounded-3" style="object-fit: cover; "></div>
+    </div>
+  </div>
+</section>
+<!-- /2 Col Images: White Backg -->
+		<!-- 2 Col Images: Grey Backg -->
+<section class="py-5" style="background: rgb(245, 245, 245, 1);">
+  <div class="container-xl px-4">
+    <div class="row g-4">
+     <div class="col-12 col-md-6"><img src="assets/projects/b36/b36-thermostat.png" alt="Security dashboard" class="w-100 rounded-3" style="object-fit: cover;"></div>
+      <div class="col-12 col-md-6"><img src="assets/projects/b36/b36-app.png" alt="Security interface" class="w-100 rounded-3" style="object-fit: cover; "></div>
+    </div>
+  </div>
+</section>
+<!-- /2 Col Images: Dark Backg -->	
+		<!-- 2 Col Images: White Backg -->
+	<section class="py-5 bg-white">
+  <div class="container-xl px-4">
+    <div class="row g-4">
+      <div class="col-12 col-md-6"><img src="assets/projects/b36/b36-icons.png" alt="Security dashboard" class="w-100 rounded-3" style="object-fit: cover;"></div>
+      <div class="col-12 col-md-6"><img src="assets/projects/b36/b36-homeproducts.png" alt="Security interface" class="w-100 rounded-3" style="object-fit: cover; "></div>
+    </div>
+  </div>
+</section>
+<!-- /2 Col Images: White Backg -->
+	<!-- 2 Col Images: Dark Backg --
+<section class="py-5" style="background: rgb(21, 25, 29);">
+  <div class="container-xl px-4">
+    <div class="row g-4">
+      <div class="col-12 col-md-6"><img src="https://images.unsplash.com/photo-1720962158937-7ea890052166?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;w=1080" alt="Control panel" class="w-100 rounded-3" style="object-fit: cover; height: 340px; opacity: 0.85;"></div>
+      <div class="col-12 col-md-6"><img src="https://images.unsplash.com/photo-1651505942687-efc26cb528ba?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;w=1080" alt="Security screen" class="w-100 rounded-3" style="object-fit: cover; height: 340px; opacity: 0.85;"></div>
+    </div>
+  </div>
+</section>
+<!-- /2 Col Images: Dark Backg -->	
+	<!-- 2 Col Images: White Backg --
+	<section class="py-5 bg-white">
+  <div class="container-xl px-4">
+    <div class="row g-4">
+      <div class="col-12 col-md-6"><img src="https://images.unsplash.com/photo-1751448555253-f39c06e29d82?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;w=1080" alt="Security dashboard" class="w-100 rounded-3" style="object-fit: cover; height: 340px;"></div>
+      <div class="col-12 col-md-6"><img src="https://images.unsplash.com/photo-1762340916350-ad5a3d620c16?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;w=1080" alt="Security interface" class="w-100 rounded-3" style="object-fit: cover; height: 340px;"></div>
+    </div>
+  </div>
+</section>
+<!-- /2 Col Images: White Backg -->
+	<!-- 2 Col Images: Dark Backg --
+<section class="py-5" style="background: rgb(21, 25, 29);">
+  <div class="container-xl px-4">
+    <div class="row g-4">
+      <div class="col-12 col-md-6"><img src="https://images.unsplash.com/photo-1720962158937-7ea890052166?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;w=1080" alt="Control panel" class="w-100 rounded-3" style="object-fit: cover; height: 340px; opacity: 0.85;"></div>
+      <div class="col-12 col-md-6"><img src="https://images.unsplash.com/photo-1651505942687-efc26cb528ba?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;w=1080" alt="Security screen" class="w-100 rounded-3" style="object-fit: cover; height: 340px; opacity: 0.85;"></div>
+    </div>
+  </div>
+</section>
+<!-- /2 Col Images: Dark Backg -->	
+
+<!-- Bottom CTA: Next Project -->
+<section class="py-5 bg-white text-center">
+	<a href="index.html" class="btn rounded-pill px-4 py-2 me-2 border border-dark text-dark">Back Home</a>
+	<a href="sds.html" class="btn rounded-pill px-4 py-2 text-white" style="background: rgb(0, 0, 0);">Next Project</a>
+	</section>
+<!-- /Bottom CTA: Next Project -->
+
+    <!-- FOOTER -->
+     <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <a href="index.html" class="footer-logo-link">
+                    <!--<div class="cc-icon"><span></span><span></span><span></span><span></span><span></span><span></span></div>-->
+                    <img src="assets/img/cc_icon_logo.png" style="width: 35px;" alt="Chabelly Cespedes Logo">
+                    <div>
+                        <div class="nav-name">Chabelly Céspedes</div>
+                        <div class="nav-title">Designer &amp; Developer</div>
+                    </div>
+                </a>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Menu</div>
+                <a href="index.html#projects">Projects</a>
+                <a href="https://chabelly.github.io/assets/hi_is_chabelly_cespedes_resume.pdf" target="_blank">Resume
+                    (PDF)</a>
+            </div>
+            <div class="footer-col">
+                <div class="footer-col-title">Follow me</div>
+                <a href="https://www.linkedin.com/in/chabelly-cespedes-4a95679b/">LinkedIn</a>
+                <a href="https://www.behance.net/ChabellyCespedes?locale=en_US">Behance</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-copy">© Chabelly Cespedes. All Rights Reserved.</span>
+            <a class="footer-back" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to Top</a>
+        </div>
+</footer>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('icon-open');
+        const iconClose = document.getElementById('icon-close');
+        hamburger.addEventListener('click', () => {
+            const isOpen = mobileMenu.classList.toggle('open');
+            iconOpen.style.display = isOpen ? 'none' : 'block';
+            iconClose.style.display = isOpen ? 'block' : 'none';
+        });
+        function closeMenu() {
+            mobileMenu.classList.remove('open');
+            iconOpen.style.display = 'block';
+            iconClose.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
