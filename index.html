@@ -325,16 +325,19 @@
 
     /* ── CTA ── */
     .cta-section {
-      padding-top: 80px;
+      padding: 80px 0px 80px 0px;
     }
 
     .cta-text-row {
       display: flex;
-      align-items: flex-end;
+      align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 24px;
       padding: 0 60px 20px;
+      align-content: center;
+    text-align: center;
+    flex-direction: column;
     }
 
     .cta-italic {
@@ -543,7 +546,7 @@
       .cta-text-row {
         padding: 0 24px 40px;
         flex-direction: column;
-        align-items: flex-start;
+        /*align-items: flex-start;*/
       }
 
       .footer-inner {
@@ -637,9 +640,43 @@
     <div class="hero-sans">Digital Experiences</div>
   </section>
 
+  <!-- MARQUEE -->
+  <section class="marquee-section">
+    <div class="marquee-track">
+      <img class="marquee-img" src="assets/marquee/1.png" alt="Mobile design" />
+      <img class="marquee-img" src="assets/marquee/2.png" alt="animal adoption site" />
+      <img class="marquee-img" src="assets/marquee/3.png" alt="Indiana fever website, wnba" />
+      <img class="marquee-img" src="assets/marquee/4.png" alt="fertility site" />
+      <img class="marquee-img" src="assets/marquee/5.png" alt="circuit ride website" />
+      <img class="marquee-img" src="assets/marquee/6.png" alt="sds website rebrand" />
+      <img class="marquee-img" src="assets/marquee/7.png" alt="pointcentral website" />
+      <img class="marquee-img" src="assets/marquee/8.png" alt="ObjectVideo Lab website rebrand" />
+      <img class="marquee-img" src="assets/marquee/9.png" alt="Building36 website rebrand" />
+      <!-- duplicated for seamless loop -->
+      <img class="marquee-img" src="assets/marquee/1.png" alt="Mobile design" />
+      <img class="marquee-img" src="assets/marquee/2.png" alt="animal adoption site" />
+      <img class="marquee-img" src="assets/marquee/3.png" alt="Indiana fever website, wnba" />
+      <img class="marquee-img" src="assets/marquee/4.png" alt="fertility site" />
+      <img class="marquee-img" src="assets/marquee/5.png" alt="circuit ride website" />
+      <img class="marquee-img" src="assets/marquee/6.png" alt="sds website rebrand" />
+      <img class="marquee-img" src="assets/marquee/7.png" alt="pointcentral website" />
+      <img class="marquee-img" src="assets/marquee/8.png" alt="ObjectVideo Lab website rebrand" />
+      <img class="marquee-img" src="assets/marquee/9.png" alt="Building36 website rebrand" />
+    </div>
+  </section>
+  
   <!-- PROJECTS -->
   <section id="projects">
     <div class="projects-row">
+      <a href="#" class="project-card disabled">
+        <div class="card-bg" style="background-image:url('assets/img/adc.jpg')"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <div class="card-title">Alarm.com</div>
+          <div class="card-tags">Web Design, Rebrand, Dev</div>
+        </div>
+        <div class="card-btn"><span class="btn-explore">Project Coming Soon</span></div>
+      </a>
       <a href="https://chabelly.github.io/building36.html" class="project-card">
         <div class="card-bg" style="background-image:url('assets/img/B36_Cover.png')"></div>
         <div class="card-overlay"></div>
@@ -677,15 +714,6 @@
         <div class="card-btn"><span class="btn-explore">Explore Project</span></div>
       </a>
       <a href="#" class="project-card disabled">
-        <div class="card-bg" style="background-image:url('assets/img/adc.jpg')"></div>
-        <div class="card-overlay"></div>
-        <div class="card-content">
-          <div class="card-title">Alarm.com</div>
-          <div class="card-tags">Web Design, Rebrand, Dev</div>
-        </div>
-        <div class="card-btn"><span class="btn-explore">Project Coming Soon</span></div>
-      </a>
-      <a href="#" class="project-card disabled">
         <div class="card-bg" style="background-image:url('assets/img/CCP_Cover.png')"></div>
         <div class="card-overlay"></div>
         <div class="card-content">
@@ -706,31 +734,6 @@
       </div>
       <a href="mailto:chabellycespedes@gmail.com?subject=Contact Chabelly Cespedes For Freelance Work!"
         class="btn-get-in-touch">Get in Touch</a>
-    </div>
-  </section>
-
-  <!-- MARQUEE -->
-  <section class="marquee-section">
-    <div class="marquee-track">
-      <img class="marquee-img" src="assets/marquee/1.png" alt="Mobile design" />
-      <img class="marquee-img" src="assets/marquee/2.png" alt="animal adoption site" />
-      <img class="marquee-img" src="assets/marquee/3.png" alt="Indiana fever website, wnba" />
-      <img class="marquee-img" src="assets/marquee/4.png" alt="fertility site" />
-      <img class="marquee-img" src="assets/marquee/5.png" alt="circuit ride website" />
-      <img class="marquee-img" src="assets/marquee/6.png" alt="sds website rebrand" />
-      <img class="marquee-img" src="assets/marquee/7.png" alt="pointcentral website" />
-      <img class="marquee-img" src="assets/marquee/8.png" alt="ObjectVideo Lab website rebrand" />
-      <img class="marquee-img" src="assets/marquee/9.png" alt="Building36 website rebrand" />
-      <!-- duplicated for seamless loop -->
-      <img class="marquee-img" src="assets/marquee/1.png" alt="Mobile design" />
-      <img class="marquee-img" src="assets/marquee/2.png" alt="animal adoption site" />
-      <img class="marquee-img" src="assets/marquee/3.png" alt="Indiana fever website, wnba" />
-      <img class="marquee-img" src="assets/marquee/4.png" alt="fertility site" />
-      <img class="marquee-img" src="assets/marquee/5.png" alt="circuit ride website" />
-      <img class="marquee-img" src="assets/marquee/6.png" alt="sds website rebrand" />
-      <img class="marquee-img" src="assets/marquee/7.png" alt="pointcentral website" />
-      <img class="marquee-img" src="assets/marquee/8.png" alt="ObjectVideo Lab website rebrand" />
-      <img class="marquee-img" src="assets/marquee/9.png" alt="Building36 website rebrand" />
     </div>
   </section>
 
