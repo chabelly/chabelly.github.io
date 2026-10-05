@@ -64,14 +64,12 @@ body {
     /* visually disabled */
     cursor: not-allowed;
 }
-	
-	.inner {
+.inner {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 24px;
 }
-	
-	.heading {
+.heading {
     font-family: "Instrument Serif:Italic", "Instrument Serif", serif;
     font-style: italic;
     font-size: clamp(28px, 3.4vw, 57px);
@@ -80,7 +78,6 @@ body {
     line-height: 1.05;
     margin-bottom: 40px;
 }
-	
 /* HERO */
 .hero-outer {
     background: #fff;
@@ -282,10 +279,10 @@ body {
     font-weight: 600;
     font-size: 16px;
     color: #15191d;
-    background: #f3f3f3;
+    background: #f7f7f7;
     border-radius: 100px;
     padding: 8px 20px;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
 }
 .hero-italic {
     font-family: 'Instrument Serif', serif;
@@ -569,7 +566,7 @@ footer {
     height: 450px;
 }
 .cta-text-row {
-    padding: 0 24px 40px;
+    padding: 0 24px 0px;
     flex-direction: column;/*align-items: flex-start;*/
 }
 .footer-inner {
@@ -581,6 +578,21 @@ footer {
 .marquee-img {
     width: 260px;
     height: 174px;
+}
+.marquee-section {
+    padding: 0px 0px 20px 0px;
+}
+.hero {
+    text-align: center;
+    padding: 10px 0px 48px;
+}
+.hero-card {
+    padding: 20px 10px;
+}
+.hero-ui img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 }
 
@@ -642,9 +654,9 @@ footer {
     <section class="hero">
       <div class="hero-badge">Creative Technologist</div>
       <div class="hero-italic">Crafting Thoughtful</div>
-      <div class="hero-sans">Digital Experiences</div><br>
-		 <a href="#projects" class="btn-get-in-touch">View Projects</a> 
-    </section>
+      <div class="hero-sans">Digital Experiences</div>
+      <br>
+      <a href="#projects" class="btn-get-in-touch">View Projects</a> </section>
     <div class="hero-ui"> <img src="assets/img/ui-floating-projects-v2.png" alt="Product UI showcase — Alarm.com doorbell, package selector, camera feeds" draggable="false"/> </div>
   </div>
 </div>
@@ -664,19 +676,19 @@ footer {
   </div>
 </div>
 <!-- PROJECT HEADLINE --> 
-	<br><br><br>
-	<div class="cta-text-row">
-    <div>
-		<!--<div class="heading">Selected Projects</div>-->
-      <div class="cta-italic">Selected Projects</div>
-    </div>
+<br>
+<br>
+<br>
+<div class="cta-text-row">
+  <div> 
+    <!--<div class="heading">Selected Projects</div>-->
+    <div class="cta-italic">Selected Projects</div>
+  </div>
 </div>
 
-<!-- PROJECTS -->	
+<!-- PROJECTS -->
 <section id="projects">
-  <div class="projects-row">
-  
-	<a href="#" class="project-card disabled">
+  <div class="projects-row"> <a href="#" class="project-card disabled">
     <div class="card-bg" style="background-image:url('assets/img/adc.jpg')"></div>
     <div class="card-overlay"></div>
     <div class="card-content">
@@ -684,9 +696,7 @@ footer {
       <div class="card-tags">Web Design, UI/UX, Product, Design Systems, Brand</div>
     </div>
     <div class="card-btn"><span class="btn-explore">Project Coming Soon</span></div>
-    </a>
-	  
-	 <a href="https://chabelly.github.io/building36.html" class="project-card">
+    </a> <a href="https://chabelly.github.io/building36.html" class="project-card">
     <div class="card-bg" style="background-image:url('assets/img/B36_Cover.png')"></div>
     <div class="card-overlay"></div>
     <div class="card-content">
@@ -694,9 +704,7 @@ footer {
       <div class="card-tags">Brand, Web Design, UI/UX</div>
     </div>
     <div class="card-btn"><span class="btn-explore">Explore Project</span></div>
-    </a>
-	  
-	<a href="https://chabelly.github.io/sds.html" class="project-card">
+    </a> <a href="https://chabelly.github.io/sds.html" class="project-card">
     <div class="card-bg" style="background-image:url('assets/img/SDS_cover.png')"></div>
     <div class="card-overlay"></div>
     <div class="card-content">
@@ -739,8 +747,7 @@ footer {
       <div class="cta-sans">Start your next Project?</div>
     </div>
     <a href="mailto:chabellycespedes@gmail.com?subject=Contact Chabelly Cespedes For Freelance Work!"
-        class="btn-get-in-touch">Get in Touch</a> 
-</div>
+        class="btn-get-in-touch">Get in Touch</a> </div>
 </section>
 <!-- MARQUEE -->
 <section class="marquee-section">
